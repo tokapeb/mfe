@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { mount } from 'auth/AuthApp';
 import { useHistory } from 'react-router-dom';
 
-export default ({ onSignIn, onSignOut }) => {
+export default ({ onSignIn }) => {
   const ref = useRef(null);
   const history = useHistory();
 
