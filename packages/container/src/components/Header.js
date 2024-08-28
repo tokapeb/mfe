@@ -69,16 +69,14 @@ export default function Header({ signedIn, onSignOut }) {
         position="static"
         color="default"
         elevation={0}
-        className={classes.appBar}
-      >
+        className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography
             variant="h6"
             color="inherit"
             noWrap
             component={RouterLink}
-            to="/"
-          >
+            to="/">
             App
           </Typography>
           <Button
@@ -87,8 +85,7 @@ export default function Header({ signedIn, onSignOut }) {
             className={classes.link}
             component={RouterLink}
             to={signedIn ? '/' : '/auth/signin'}
-            onClick={onClick}
-          >
+            onClick={onClick}>
             {signedIn ? 'Logout' : 'Login'}
           </Button>
         </Toolbar>
